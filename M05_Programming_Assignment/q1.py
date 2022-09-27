@@ -9,11 +9,11 @@ def monthly_sales(total_sales):
     
     state_tax = total_sales * c_state_tax
     cnty_tax = total_sales * c_county_tax
-    grand_total = cnty_tax + state_tax + total_sales
+    total_tax = cnty_tax + state_tax
 
     ret_output = "The county sales tax is: " + str(cnty_tax) + "\n"
     ret_output = ret_output + "The state sales tax is: " + str(state_tax) + "\n"
-    ret_output = ret_output + "The grand total is: " + str(grand_total)
+    ret_output = ret_output + "The total tax is: " + str(total_tax)
 
     return(ret_output)
 
